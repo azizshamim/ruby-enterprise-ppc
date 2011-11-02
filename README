@@ -1,0 +1,6 @@
+This patch adds some flags to the compilier so that it compiles properly on RHEL 5.x PPC.
+
+This probably breaks it compiling on other architectures.
+
+TODO:
+* Move the patch to the source/configure.in, source/configure, or ./installer.rb
