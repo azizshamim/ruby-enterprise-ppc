@@ -1,0 +1,11 @@
+--- ruby-enterprise-1.8.7-2011.03/source/Makefile.in  2011-02-24 04:09:12.000000000 -0600
++++ ruby-enterprise-1.8.7-2011.03/source/Makefile.in  2011-11-01 14:38:45.000000000 -0500
+@@ -178,7 +178,7 @@
+  rm -f y.tab.c
+ 
+ .c.@OBJEXT@:
+- $(CC) $(CFLAGS) $(CPPFLAGS) -c $<
++ $(CC) $(CFLAGS) $(CPPFLAGS) -Xassembler -mregnames -c $<
+ 
+ .s.@OBJEXT@:
+  $(AS) $(ASFLAGS) -o $@ $<
